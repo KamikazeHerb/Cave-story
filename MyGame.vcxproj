@@ -26,7 +26,7 @@
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Lenovo User\source\repos\MyGame\MyGame\Source\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="Source\Src\Graphics.cpp">
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Lenovo User\source\repos\MyGame\MyGame\Source\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Lenovo User\source\repos\MyGame\SDL2-2.0.8\include;C:\Users\Lenovo User\source\repos\MyGame\MyGame\Source\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="Source\Src\Input.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Lenovo User\source\repos\MyGame\MyGame\Source\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Headers\Game.h" />
+    <ClInclude Include="Source\Headers\Globals.h" />
     <ClInclude Include="Source\Headers\Graphics.h" />
     <ClInclude Include="Source\Headers\Input.h" />
     <ClInclude Include="Source\Headers\Sprite.h" />
