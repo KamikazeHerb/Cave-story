@@ -39,6 +39,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Headers\Animated Sprite.h" />
     <ClInclude Include="Source\Headers\Game.h" />
     <ClInclude Include="Source\Headers\Globals.h" />
     <ClInclude Include="Source\Headers\Graphics.h" />
