@@ -4,6 +4,7 @@
 
 #include <string>
 #include <map>
+#include <vector>
 
 #include "Sprite.h"
 #include "Globals.h"
@@ -41,8 +42,43 @@ public:
 	*/
 	virtual void setupAnimations();
 
+protected:
+	double _timeToUpdate;
+	bool _currentAnimationOnce;
+	std::string _currentAnimation;
+
+	/*addAnimation
+	adds an animation to the map of animations for a sprite
+	*/
+	void addAnimation(int frames, int x, int y, std::string name, int width, int height, vector2 offset);
+
+	/*resetAnimation
+	resets all animations associated with this sprite
+	*/
+	void resetAnimations();
+
+	/*stopAnimation
+	stops the current animation
+	*/
+	void stopAnimation();
+
+	/*setVisible
+	changes the visibility of the animated sprite
+	*/
+	void setVisible(bool visible);
+
+	/*void animationDone
+	logic that happens when an animation ends
+	*/
+	virtual void animationDone(std::string currentAnimation);
+
 private:
-	std::map<std::string, std::>
+	std::map<std::string, std::vector<SDL_Rect> > _animations;
+	std::map<std::string, vector2> _offsets;
+
+	int _frameIndex;
+	int _timeElapsed;
+	bool _visible;
 
 };
 

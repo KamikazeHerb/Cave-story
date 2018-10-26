@@ -22,6 +22,9 @@
     <None Include="Source\Src\MyGame.sln" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Src\Animated Sprite.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Lenovo User\source\repos\MyGame\MyGame\Source\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="Source\Src\Game.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Lenovo User\source\repos\MyGame\MyGame\Source\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
